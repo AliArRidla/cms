@@ -22,9 +22,9 @@ use Illuminate\Support\Facades\Redis;
 Route::get('/', 'ArticleController@getAll');
 Route::get('/article/{article}', 'ArticleController@getById');
 
-// // about
-// Route::get('/about', 'AboutController@index');
+// about
+Route::get('/about', 'AboutController@index');
 
-// //coba 
-// Route::get('/coba', 'CobaController@index');
-// Route::get('/coba/{coba}', 'CobaController@show');
+//coba 
+Route::get('/coba', 'CobaController@index');
+Route::get('/coba/{coba}', 'CobaController@show');
