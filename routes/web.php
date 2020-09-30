@@ -1,5 +1,7 @@
 <?php
 
+// use Illuminate\Routing\Route;
+use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Redis;
 
 /*
@@ -17,8 +19,12 @@ use Illuminate\Support\Facades\Redis;
 // Route::get("cacheku", "UserController@index");
 
 //Article
-Route::get('/', 'ArticleController@index');
-Route::get('/article/{article}', 'ArticleController@show');
+Route::get('/', 'ArticleController@getAll');
+Route::get('/article/{article}', 'ArticleController@getById');
 
-// about
-Route::get('/about', 'AboutController@index');
+// // about
+// Route::get('/about', 'AboutController@index');
+
+// //coba 
+// Route::get('/coba', 'CobaController@index');
+// Route::get('/coba/{coba}', 'CobaController@show');
